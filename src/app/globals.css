@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Amatic+SC:wght@400;700&family=Bruno+Ace+SC&family=Genos:ital,wght@0,100..900;1,100..900&family=Grandiflora+One&family=Josefin+Slab:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&family=Poiret+One&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* hide scrollbar for Webkit (Chrome, Safari) */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* hide scrollbar for Firefox */
+.scrollbar-hide {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none;    /* Firefox */
+}
+
+
+@keyframes gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.animate-gradient-border {
+  background-size: 200% 200%;
+  animation: gradient-move 3s linear infinite;
+}
+
+@keyframes point {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+}
+
+.animate-point {
+  animation: point 1.5s infinite;
+  transform-origin: top left;
+}
+
+
+
+/* Shine sweep effect */
+.shine {
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transform: skewX(-20deg);
+}
+
+.group:hover .shine {
+  animation: shineMove 1s ease forwards;
+}
+
+@keyframes shineMove {
+  100% {
+    left: 125%;
+  }
+}
