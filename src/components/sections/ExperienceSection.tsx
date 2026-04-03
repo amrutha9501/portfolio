@@ -101,7 +101,7 @@ const ExperienceSection = () => {
             <span className="block mt-2">EXPERIENCE</span>
           </h2>
           <p className=" leading-relaxed text-sm md:text-lg font-mono max-w-md mt-4 md:mt-8 text-[#d3cdc3]">
-            Here's a snapshot of the roles I've taken on, challenges I've solved, and value I've added to teams and projects.
+            Here&apos;s a snapshot of the roles I&apos;ve taken on, challenges I&apos;ve solved, and value I&apos;ve added to teams and projects.
             Each opportunity has helped shape my problem-solving skills, adaptability, and growth as a developer.
           </p>
 

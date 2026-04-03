@@ -3,6 +3,7 @@
 import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 import { motion } from 'framer-motion'
+import Image from "next/image";
 
 type Project = {
     title: string;
@@ -92,7 +93,7 @@ const ProjectsSection = () => {
                             >
                                 <div className="w-full h-full">
                                     {project.type === 'image' ? (
-                                        <img
+                                        <Image 
                                             src={project.image}
                                             alt={project.title}
                                             className="w-full h-full object-cover"
