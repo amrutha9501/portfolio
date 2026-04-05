@@ -7,7 +7,7 @@ const EducationSection = () => {
     return (
         <section id="education" className="w-full px-4 py-6 bg-black dark:bg-white">
             <div className="max-w-4xl mx-auto">
-                <h2 className="text-2xl font-bold mb-6 text-center text-black-800 dark:text-black">EDUCATION</h2>
+                <h2 className="text-2xl font-bold mb-6 text-center dark:text-black">EDUCATION</h2>
                 <div className="relative flex flex-col gap-6">
                     {/* Vertical line */}
                     <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-black-300 dark:bg-[#68321f]" />
@@ -34,7 +34,7 @@ const EducationSection = () => {
 
                                         {/* ICON */}
                                         <div className="w-6 h-6 flex items-center justify-center bg-black dark:bg-black-950 border-2 border-black-800 dark:border-black rounded-full z-10 shrink-0">
-                                            {/* <GraduationCap className="w-3 h-3 text-black-800 dark:text-white" /> */}
+                                            {/* <GraduationCap className="w-3 h-3   dark:text-white" /> */}
                                         </div>
 
                                         {/* LEFT SIDE: Institution Details */}
@@ -70,7 +70,7 @@ const EducationSection = () => {
                                         <div className="flex justify-start w-full pl-3 md:pl-4">
                                             <div className="text-left max-w-sm">
                                                 <p className="text-xs text-black-500 dark:text-black-400">{edu.duration}</p>
-                                                <h3 className="text-sm font-semibold text-black-800 dark:text-black">{edu.course}</h3>
+                                                <h3 className="text-sm font-semibold   dark:text-black">{edu.course}</h3>
                                             </div>
                                         </div>
                                     </>

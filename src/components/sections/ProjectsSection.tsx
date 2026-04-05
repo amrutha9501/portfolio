@@ -91,12 +91,13 @@ const ProjectsSection = () => {
                                 viewport={{ once: true }}
                                 className="relative group bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden transition-shadow hover:shadow-xl w-[350px] h-[350px]"
                             >
-                                <div className="w-full h-full">
+                                <div className="relative w-full h-full">
                                     {project.type === 'image' ? (
                                         <Image 
                                             src={project.image}
                                             alt={project.title}
-                                            className="w-full h-full object-cover"
+                                            fill
+                                            className="object-cover"
                                         />
                                     ) : (
                                         <video

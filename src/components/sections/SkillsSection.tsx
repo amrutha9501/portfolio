@@ -44,7 +44,7 @@ const SkillsSection = () => {
   return (
     <section id="skills" className="w-full px-6 py-10 bg-black dark:bg-[#f4f4f0] pt-24">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-black-800 dark:text-[#010626] text-center mb-6">
+        <h2 className="text-4xl font-bold   dark:text-[#010626] text-center mb-6">
           TECHNICAL SKILLS
         </h2>
         <p className="text-center text-[#010626] dark:text-black-300 mb-10 text-sm md:text-base font-mono max-w-3xl mx-auto">
@@ -54,7 +54,7 @@ const SkillsSection = () => {
           <div className="w-full md:w-1/2">
             {Object.entries(skillsData).map(([category, skills]) => (
               <div key={category} className="mb-6">
-                <h3 className="text-xl font-semibold mb-4 text-black-800 dark:text-b-200 text-center">
+                <h3 className="text-xl font-semibold mb-4   dark:text-b-200 text-center">
                   {category}</h3>
                 <div className="flex flex-wrap gap-4 justify-end">
                   {skills.map((skill, idx) => (
@@ -79,7 +79,7 @@ const SkillsSection = () => {
           </div>
 
           <div className="w-full md:w-1/2 flex flex-col px-14 ">
-            <h3 className="text-2xl font-semibold mb-10 text-center text-black-800 dark:text-black-200">
+            <h3 className="text-2xl font-semibold mb-10 text-center   dark:text-black-200">
               Proficiency Overview
             </h3>
             {[
