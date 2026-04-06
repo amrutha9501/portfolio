@@ -12,16 +12,15 @@ import { BiMessageAlt, BiSolidMessageAlt } from 'react-icons/bi'
 
 const skillsData = {
   Languages: [
-    { name: 'C++', icon: <SiCplusplus className="text-blue-500" />, link: 'https://cplusplus.com/' },
-    { name: 'Python', icon: <FaPython className="text-yellow-500" />, link: 'https://docs.python.org/3/' },
     { name: 'Java', icon: <FaJava className="text-red-600" />, link: 'https://docs.oracle.com/en/java/' },
     { name: 'JavaScript', icon: <FaJs className="text-yellow-400" />, link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript' },
     { name: 'SQL', icon: <SiMysql className="text-blue-600" />, link: 'https://dev.mysql.com/doc/' },
+    { name: 'Python', icon: <FaPython className="text-yellow-500" />, link: 'https://docs.python.org/3/' },
+    { name: 'C++', icon: <SiCplusplus className="text-blue-500" />, link: 'https://cplusplus.com/' },
   ],
   Technologies: [
     { name: 'HTML5', icon: <FaHtml5 className="text-orange-600" />, link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5' },
     { name: 'CSS3', icon: <FaCss3Alt className="text-blue-700" />, link: 'https://developer.mozilla.org/en-US/docs/Web/CSS' },
-    { name: 'Django', icon: <SiDjango className="text-green-700" />, link: 'https://docs.djangoproject.com/' },
     { name: 'React', icon: <FaReact className="text-cyan-400" />, link: 'https://reactjs.org/docs/getting-started.html' },
     { name: 'Angular', icon: <SiAngular className="text-red-500" />, link: 'https://angular.io/docs' },
     { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-teal-400" />, link: 'https://tailwindcss.com/docs' },
@@ -29,6 +28,7 @@ const skillsData = {
     { name: 'MongoDB', icon: <SiMongodb className="text-green-500" />, link: 'https://www.mongodb.com/docs/' },
     { name: 'Express.js', icon: <SiExpress className="text-gray-800 dark:text-black" />, link: 'https://expressjs.com/en/4x/api.html' },
     { name: 'Node.js', icon: <FaNodeJs className="text-green-600" />, link: 'https://nodejs.org/en/docs/' },
+    { name: 'Django', icon: <SiDjango className="text-green-700" />, link: 'https://docs.djangoproject.com/' },
   ],
   Tools: [
     { name: 'VS Code', icon: <SiVsco className="text-blue-500" />, link: 'https://code.visualstudio.com/docs' },

@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily:{
         josefin: ['Josefin Slab', 'serif'],
-        grandiflora: ['Grandiflora One', 'cursive'],
+        grandiflora: ['"Grandiflora One"', 'cursive'],
         amatic: ['"Amatic SC"', 'cursive'],
         oswald: ['Oswald', 'sans-serif'],
         alumni: ['Alumni Sans Pinstripe', 'sans-serif'],

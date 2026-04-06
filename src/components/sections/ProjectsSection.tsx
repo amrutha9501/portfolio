@@ -93,10 +93,11 @@ const ProjectsSection = () => {
                             >
                                 <div className="relative w-full h-full">
                                     {project.type === 'image' ? (
-                                        <Image 
+                                        <Image
                                             src={project.image}
                                             alt={project.title}
                                             fill
+                                            sizes="(max-width: 768px) 100vw, 350px"
                                             className="object-cover"
                                         />
                                     ) : (

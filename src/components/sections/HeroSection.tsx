@@ -35,6 +35,8 @@ const HeroSection = () => {
               src="/images/arrow-curve.png"
               alt="Arrow"
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              priority
               className="object-contain"
             />
           </div>
@@ -42,7 +44,7 @@ const HeroSection = () => {
           {/* Paragraph + Button */}
           <div className="flex flex-col items-center">
             <p className="mt-10 max-w-md text-sm md:text-base font-mono text-[#aba69e] md:text-justify">
-              I&apos;m Amrutha Amrutha — a full-stack developer and creative thinker with a growing interest in AI.
+              I&apos;m Amrutha — a full-stack developer and creative thinker with a growing interest in AI.
               <br />
               This is my space to share projects, ideas, and my journey of building meaningful digital experiences. I enjoy turning concepts into engaging web applications and leveraging AI to create smarter, more impactful solutions, while continuously learning and evolving.
             </p>
@@ -60,7 +62,7 @@ const HeroSection = () => {
 
       {/* Right Image */}
       <div className="relative z-10 w-full md:w-1/3 flex justify-center mt-12 md:mt-6 mb-8">
-        
+
         <motion.div
           whileHover="hover"
           initial="rest"
@@ -103,6 +105,8 @@ const HeroSection = () => {
               src="/images/tied_photo.png"
               alt="Amrutha Acharya"
               fill
+              sizes="(max-width: 768px) 100vw, 33vw"
+              priority
               className="object-cover"
             />
           </motion.div>
