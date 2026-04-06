@@ -21,7 +21,7 @@ const ContactSection = () => (
       className="min-h-[45vh] w-full bg-[#010315] text-[#e8e2db] flex flex-col items-center justify-center px-6 font-josefin text-center pt-10 py-10"
     >
       <div className="max-w-4xl w-full mb-12">
-        <h2 className="text-4xl font-bold mb-8">CONTACT</h2>
+        <h2 className="text-3xl md:text-4xl font-bold mb-8">CONTACT</h2>
         <p className="text-lg mb-6 max-w-xl mx-auto">
           Feel free to reach out to me through any of the following ways!
         </p>
