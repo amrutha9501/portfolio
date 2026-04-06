@@ -5,12 +5,14 @@ import {
   FaLinkedinIn, FaGithub, FaTwitter, FaInstagram,
 } from 'react-icons/fa'
 
+
 const socialLinks = [
-  { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/in/amrutha-ach/', color: 'hover:bg-blue-500' },
-  { icon: <FaGithub />, href: 'https://github.com/amrutha9501', color: 'hover:bg-gray-800' },
-  { icon: <FaTwitter />, href: 'https://twitter.com', color: 'hover:bg-sky-400' },
-  { icon: <FaInstagram />, href: 'https://instagram.com/amrutha.0', color: 'hover:bg-pink-500' },
+  { icon: <FaLinkedinIn />, href: 'https://www.linkedin.com/in/amrutha-ach/', color: 'hover:border-blue-500 hover:text-blue-500' },
+  { icon: <FaGithub />, href: 'https://github.com/amrutha9501', color: 'hover:border-gray-900 hover:text-gray-900' },
+  { icon: <FaTwitter />, href: 'https://twitter.com', color: 'hover:border-sky-400 hover:text-sky-400' },
+  { icon: <FaInstagram />, href: 'https://instagram.com/amrutha.0', color: 'hover:border-pink-500 hover:text-pink-500' },
 ];
+
 
 const ContactSection = () => (
   <>
@@ -47,7 +49,7 @@ const ContactSection = () => (
               href={href}
               target="_blank"
               rel="noopener noreferrer"
-              className={`w-12 h-12 text-xl flex items-center justify-center border border-white rounded-full transition duration-300 ${color} hover:bg-white hover:text-[#0D0F2A]`}
+              className={`w-12 h-12 text-xl flex items-center justify-center border border-white rounded-full transform transition-all duration-300 ease-out ${color} hover:bg-white hover:text-[#0D0F2A] hover:scale-110`}
             >
               {icon}
             </a>

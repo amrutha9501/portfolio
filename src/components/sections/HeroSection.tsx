@@ -44,7 +44,7 @@ const HeroSection = () => {
           {/* Paragraph + Button */}
           <div className="flex flex-col items-center">
             <p className="mt-10 max-w-md text-sm md:text-base font-mono text-[#aba69e] md:text-justify">
-              I&apos;m Amrutha — a full-stack developer and creative thinker with a growing interest in AI.
+              I&apos;m Amrutha — a full-stack developer and creative thinker exploring the world of AI.
               <br />
               This is my space to share projects, ideas, and my journey of building meaningful digital experiences. I enjoy turning concepts into engaging web applications and leveraging AI to create smarter, more impactful solutions, while continuously learning and evolving.
             </p>

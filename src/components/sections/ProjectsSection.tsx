@@ -48,7 +48,7 @@ const projects: Project[] = [
 
 const ProjectsSection = () => {
     return (
-        <section id="projects" className="w-full px-4 py-20 bg-gray-100 dark:bg-[#00020a] pt-24 ">
+        <section id="projects" className="w-full px-4 py-20 bg-[#00020a] pt-24 ">
             <div className="max-w-7xl mx-auto text-center">
 
                 {/* Heading - animates on scroll */}
@@ -57,7 +57,7 @@ const ProjectsSection = () => {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8 }}
                     viewport={{ once: true }}
-                    className="text-3xl md:text-4xl font-bold text-[#b3cfe5] dark:text-[#b3cfe5] mb-6"
+                    className="text-3xl md:text-4xl font-bold text-[#b3cfe5] mb-6"
                 >
                     MY PROJECTS
                 </motion.h2>

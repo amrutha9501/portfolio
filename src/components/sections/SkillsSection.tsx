@@ -26,7 +26,7 @@ const skillsData = {
     { name: 'Tailwind CSS', icon: <SiTailwindcss className="text-teal-400" />, link: 'https://tailwindcss.com/docs' },
     { name: 'Bootstrap', icon: <SiBootstrap className="text-purple-600" />, link: 'https://getbootstrap.com/docs/' },
     { name: 'MongoDB', icon: <SiMongodb className="text-green-500" />, link: 'https://www.mongodb.com/docs/' },
-    { name: 'Express.js', icon: <SiExpress className="text-gray-800 dark:text-black" />, link: 'https://expressjs.com/en/4x/api.html' },
+    { name: 'Express.js', icon: <SiExpress className="text-black" />, link: 'https://expressjs.com/en/4x/api.html' },
     { name: 'Node.js', icon: <FaNodeJs className="text-green-600" />, link: 'https://nodejs.org/en/docs/' },
     { name: 'Django', icon: <SiDjango className="text-green-700" />, link: 'https://docs.djangoproject.com/' },
   ],
@@ -42,19 +42,19 @@ const skillsData = {
 
 const SkillsSection = () => {
   return (
-    <section id="skills" className="w-full px-6 py-10 bg-black dark:bg-[#f4f4f0] pt-24">
+    <section id="skills" className="w-full px-6 py-10 bg-[#f4f4f0] text-[#010315] pt-24">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold   dark:text-[#010626] text-center mb-6">
+        <h2 className="text-4xl font-bold text-center mb-6">
           TECHNICAL SKILLS
         </h2>
-        <p className="text-center text-[#010626] dark:text-black-300 mb-10 text-sm md:text-base font-mono max-w-3xl mx-auto">
+        <p className="text-center mb-10 text-sm md:text-base font-mono max-w-3xl mx-auto">
           A comprehensive overview of programming languages, development frameworks, and tools I use to build efficient and scalable software.
         </p>
         <div className="flex flex-col md:flex-row">
           <div className="w-full md:w-1/2">
             {Object.entries(skillsData).map(([category, skills]) => (
               <div key={category} className="mb-6">
-                <h3 className="text-xl font-semibold mb-4   dark:text-b-200 text-center">
+                <h3 className="text-xl font-semibold mb-4 text-center">
                   {category}</h3>
                 <div className="flex flex-wrap gap-4 justify-end">
                   {skills.map((skill, idx) => (
@@ -79,22 +79,22 @@ const SkillsSection = () => {
           </div>
 
           <div className="w-full md:w-1/2 flex flex-col px-14 ">
-            <h3 className="text-2xl font-semibold mb-10 text-center   dark:text-black-200">
+            <h3 className="text-2xl font-semibold mb-10 text-center">
               Proficiency Overview
             </h3>
             {[
               { label: 'Web Development', percent: 93 },
               { label: 'Java', percent: 93 },
-              { label: 'Python', percent: 80 },
-              { label: 'C++', percent: 70 },
+              { label: 'Javascript', percent: 92 },
               { label: 'SQL', percent: 96 },
+              { label: 'Python', percent: 80 },
               { label: 'App Development', percent: 65 },
             ].map((item, idx) => (
               <div key={idx} className="mb-6 relative">
                 <div className="flex justify-between mb-1">
-                  <span className="text-sm font-medium text-black-700 dark:text-black-300">{item.label}</span>
+                  <span className="text-sm font-medium text-black-300">{item.label}</span>
                 </div>
-                <div className="relative w-full bg-black-200 h-1 dark:bg-gray-700 rounded-full">
+                <div className="relative w-full bg-gray-600 h-1 rounded-full">
                   {/* Colored Progress */}
                   <div
                     className="mt-4 h-1 bg-gradient-to-r from-[#010b40] to-[#010626] rounded-full"
